@@ -31,7 +31,11 @@ func main() {
 
 	// Print each day of the month
 	for day := 1; day <= daysInMonth; day++ {
-		fmt.Printf("%2d ", day)
+		if (day != now.Day()) {
+			fmt.Printf("%2d ", day)
+		} else {
+			fmt.Printf("%2d<", day) // CURRENT DAY
+		}
 		if (int(startingDay)+day)%7 == 0 {
 			fmt.Println()
 		}
