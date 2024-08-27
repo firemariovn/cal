@@ -16,7 +16,7 @@ func main() {
 	startingDay := firstOfMonth.Weekday()
 
 	// Print the month and year header
-	fmt.Printf("%s %d\n", now.Month().String(), now.Year())
+	fmt.Printf("\t[%s %d]\n", now.Month().String(), now.Year())
 
 	// Print the days of the week header
 	fmt.Println("Su Mo Tu We Th Fr Sa")
